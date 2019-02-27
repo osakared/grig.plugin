@@ -1,0 +1,3 @@
+[submodule "src/grig/plugin/lv2/lv2"]
+	path = src/grig/plugin/lv2/lv2
+	url = http://lv2plug.in/git/lv2.git
