@@ -1,0 +1,21 @@
+{
+  "name": "grig.plugin",
+  "url" : "https://haxe-grig.gitlab.io/grig/",
+  "license": "MIT",
+  "tags": [
+    "midi",
+    "audio",
+    "plugin",
+    "lv2"
+  ],
+  "description": "Support for audio plugin formats (client and host) for hxcpp.",
+  "classPath": "src",
+  "contributors": [
+    "thomasjwebb"
+  ],
+  "releasenote": "Initial release",
+  "version": "0.0.1",
+  "dependencies": {
+    "tink_core": "1.20.0"
+  }
+}
