@@ -1,0 +1,6 @@
+-cp src
+-cp ../../src
+-dce full
+-lib tink_core
+-main Main
+-cpp bin/Loader

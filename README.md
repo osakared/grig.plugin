@@ -8,4 +8,4 @@ See the [haxe grig documentation](https://haxe-grig.gitlab.io/grig/).
 
 Stuff for working with audio plugin formats:
 
-* [lv2](http://lv2plug.in/).
+* [lv2](http://lv2plug.in/)
