@@ -7,7 +7,7 @@ class Main
 
     static function main()
     {
-        var instance = Instance.load('amp.so');
+        var instance = Instance.load('../Amp/bin/Amp/output');
         trace(instance.uri);
     }
 

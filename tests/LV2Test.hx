@@ -13,7 +13,7 @@ class LV2Test
     
     public function testWriteAndRead()
     {
-        var instance = Instance.load('/home/pinkboi/src/lv2/build/plugins/eg-amp.lv2/eg-amp.lv2/amp');
+        var instance = Instance.load('examples/Amp/bin/Amp/output');
         trace(instance.uri);
         return assert(true);
     }

@@ -27,9 +27,9 @@ class Instance
     {
         var instance = new Instance();
         
-        if (!libName.endsWith(getLibExtension())) {
-            libName += getLibExtension();
-        }
+        // if (!libName.endsWith(getLibExtension())) {
+        //     libName += getLibExtension();
+        // }
 
         var lv2Descriptor:LV2DescriptorFunction = cpp.Function.getProcAddress(libName, 'lv2_descriptor');
         var descriptor = lv2Descriptor(0);
