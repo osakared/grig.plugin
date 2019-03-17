@@ -34,7 +34,8 @@ class Instance
         var lv2Descriptor:LV2DescriptorFunction = cpp.Function.getProcAddress(libName, 'lv2_descriptor');
         var descriptor = lv2Descriptor(0);
         instance.uri = descriptor.URI;
-
+        var id = descriptor.instantiate(descriptor, 44100, '/tmp', null);
+        
         return instance;
     }
 }

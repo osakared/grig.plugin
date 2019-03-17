@@ -4,7 +4,7 @@ import cpp.ConstCharStar;
 import cpp.RawPointer;
 import cpp.Void;
 
-@:native('LV2_Feature*')
+@:native('const LV2_Feature*')
 extern class LV2Feature
 {
     var URI:ConstCharStar;
