@@ -35,6 +35,9 @@ class Instance
         var descriptor = lv2Descriptor(0);
         instance.uri = descriptor.URI;
         var id = descriptor.instantiate(descriptor, 44100, '/tmp', null);
+        descriptor.connect_port(id, 0, null);
+        descriptor.deactivate(id);
+        descriptor.run(id, 512);
         
         return instance;
     }

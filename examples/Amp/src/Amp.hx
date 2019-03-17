@@ -16,4 +16,29 @@ class Amp
         trace('boink');
     }
 
+    public function connectPort(port:cpp.UInt32, data:cpp.RawPointer<cpp.Void>):Void
+    {
+        trace('connectPort');
+    }
+
+    public function activate()
+    {
+
+    }
+
+    public function deactivate()
+    {
+        trace('deactivated');
+    }
+
+    public function cleanup()
+    {
+
+    }
+
+    public function run(numSamples:cpp.UInt32)
+    {
+        trace(numSamples);
+    }
+
 }
