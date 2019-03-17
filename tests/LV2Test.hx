@@ -13,7 +13,7 @@ class LV2Test
     
     public function testWriteAndRead()
     {
-        var instance = Instance.load('examples/Amp/bin/Amp/output');
+        var instance = Instance.load('bin/Amp/output');
         trace(instance.uri);
         return assert(true);
     }

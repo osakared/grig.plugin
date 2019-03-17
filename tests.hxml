@@ -1,6 +1,17 @@
--cp tests
 -cp src
--main RunTests
 -dce full
+-lib tink_core
+
+--each
+
+-cp examples/Amp/src
+-lib grig.plugin
+Amp
+-cpp bin/Amp
+
+--next
+
+-cp tests
+-main RunTests
 -lib tink_unittest
 -cpp bin/tests

@@ -2,6 +2,5 @@
 -dce full
 -lib tink_core
 -lib grig.plugin
--D dll_export
 Amp
 -cpp bin/Amp
