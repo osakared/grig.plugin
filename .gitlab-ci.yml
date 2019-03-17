@@ -3,6 +3,7 @@ image: osakared/haxe-ci
 test:
   script:
    - lix download
+   - haxelib git git@gitlab.com:haxe-grig/grig.plugin.git
    - haxelib dev grig.plugin `pwd`
    - haxe tests.hxml -cpp bin/cpp                   && ./bin/cpp/RunTests
 
