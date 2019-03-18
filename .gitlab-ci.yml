@@ -7,7 +7,7 @@ test:
    - git submodule update
    - haxelib git grig.plugin https://gitlab.com/haxe-grig/grig.plugin.git
    - haxelib dev grig.plugin `pwd`
-   - haxe tests.hxml -cpp bin/cpp                   && ./bin/cpp/RunTests
+   - haxe tests.hxml && ./bin/tests/RunTests
 
 trigger_build:
   stage: deploy
