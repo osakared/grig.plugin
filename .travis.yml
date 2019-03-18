@@ -14,4 +14,8 @@ install:
 
 script:
   - lix download
-  - haxelib run travix cpp
+  - git submodule init
+  - git submodule update
+  - haxelib git grig.plugin https://gitlab.com/haxe-grig/grig.plugin.git
+  - haxelib dev grig.plugin `pwd`
+  - haxe tests.hxml && ./bin/tests/RunTests
