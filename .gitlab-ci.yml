@@ -3,6 +3,7 @@ image: osakared/haxe-ci
 test:
   script:
    - lix download
+   - mkdir $HOME/.ssh
    - ssh-keyscan host.example.com >> $HOME/.ssh/known_hosts
    - haxelib git grig.plugin git@gitlab.com:haxe-grig/grig.plugin.git
    - haxelib dev grig.plugin `pwd`
